@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 1 Lecture 3</title>
+</head>
+<body>
+    <form>
+        <!--hidden fields are used to validate that the form
+            is from the person you sent the form to-->
+        <input type="hidden" id="formm-id" value=""/>
+        <!--Form fields-->
+        <label for="my-text">Enter some text:</label>
+        <input type="text" name="some-text" id="my-text"/><br/>
+        Website: <input type="text" name="website"/><br/>
+        Computer: <input type="text" name="computer"/><br/>
+        <label for="my-password">Password:</label>
+        <input type="password" name="password"/><br/>
+        <input type="radio" name="gender" id="male" value="m"/>
+        <label for="male">Male</label><br/>
+        <input type="radio" name="gender" id="female" value="f"/>
+        <label for="female">Female</label><br/>
+        
+        <!--
+        <input type="radio" name="season" value="spring">Spring<br/>
+        <input type="radio" name="season" value="summer">Summer<br/>
+        <input type="radio" name="season" value="fall">Fall<br/>
+        <input type="radio" name="season" value="winter">Winter<br/>
+        -->
+
+        <input type="checkbox" name="season" value="spring">Spring<br/>
+        <input type="checkbox" name="season" value="summer">Summer<br/>
+        <input type="checkbox" name="season" value="fall">Fall<br/>
+        <input type="checkbox" name="season" value="winter">Winter<br/>
+        
+        <label for="my-text-area">Enter some text:</label><br/>
+        <textarea name="my-big-text" id="my-text-area">
+Enter your 
+text here 
+        </textarea>
+        <hr/>
+        <select name="select-food" multiple="multiple">
+                <option>Mexican</option>
+                <option>Chinese</option>
+                <option>Vietnamese</option>
+                <option>Indian</option>
+        </select><br/>
+        <input type="submit"/> |
+        <input type="reset">
+        <!--Submits:
+        ?some-text=wedf&
+        website=efq&computer=wqet&
+        password=qwqwerf&gender=on&
+        season=spring&
+        my-big-text=sdafg+%0D%0A++++++++&
+        select-food%5B%5D=Chinese&
+        select-food%5B%5D=Vietnamese
+
+        some-text=sdfhg&
+        website=awsrte&
+        computer=dfb+t&
+        password=weADFSG&
+        gender=f&
+        season=spring&
+        season=summer&
+        my-big-text=hi%0D%0A++++++++&
+        select-food=Mexican&
+        select-food=Indian HTTP/1.1" 200 -
+
+        -->
+    </form>
+</body>
+</html>
